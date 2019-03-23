@@ -1,0 +1,16 @@
+server:
+  port: 8761
+eureka:
+  instance:
+    #高端映射
+    #prefer-ip-address: true
+  client:
+    service-url:
+      defautZone: http://localhost:8761/eureka/
+     #多个eureka能不能看到
+    register-with-eureka: false
+  server:
+    enable-self-preservation: false
+spring:
+  application:
+    name: testeurekaserver
